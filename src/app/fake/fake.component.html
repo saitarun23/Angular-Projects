@@ -1,0 +1,12 @@
+<div>
+    <h3>Consume Fake Service</h3>
+    <input type="button" value="Click Here" (click)="loadFakeData()"/>
+    <br/>
+    <div *ngFor="let fake of fakeInfo">
+        <span>
+        <img src={{fake.image}} width="100px" height="100px"/> 
+            
+            {{fake.id|customPipe}} ) {{fake.title|uppercase}} {{fake.price|currency:'INR'}}
+        </span>
+    </div>
+</div>

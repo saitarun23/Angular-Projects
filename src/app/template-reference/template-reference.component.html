@@ -1,0 +1,15 @@
+<div>
+    <h3>Template Reference</h3>
+    <input type="text" #nameRef/><br/>
+    <input type="button" value="Click here" (click)="passvalue(nameRef)"/>
+    <br/>
+    <form>
+        <label>EmailId</label>
+        <input type="email" #emailidref/><br/>
+        <label>Password</label>
+        <input type="password" #passref/><br/>
+        <input type="button" value="submit" (click)="checkUser(emailidref,passref)"/>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span>
+</div>
